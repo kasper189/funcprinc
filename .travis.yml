@@ -3,7 +3,7 @@ scala: 2.11.5
 jdk: oraclejdk8
 
 env:
-    - PROJECT=example
+    - PROJECT=recfun
 
 script:
     - cd $PROJECT && sbt ++$TRAVIS_SCALA_VERSION test
