@@ -22,3 +22,5 @@ project/plugins/project/
 *.ipr
 *.iws
 out
+
+.DS_Store
