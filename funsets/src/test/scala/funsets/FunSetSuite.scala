@@ -77,6 +77,8 @@ class FunSetSuite extends FunSuite {
     val s1 = singletonSet(1)
     val s2 = singletonSet(2)
     val s3 = singletonSet(3)
+    val s22 = union(s2, s3)
+    val u = union(s1, s22)
   }
 
   /**
@@ -110,5 +112,38 @@ class FunSetSuite extends FunSuite {
     }
   }
 
+  test("diff returns the set of all elements of `s` that are not in `t`") {
+    new TestSets {
+      val t = diff(u, s2)
+      assert(contains(t, 1))
+      assert(!contains(t, 2))
+      assert(contains(t, 3))
+    }
+  }
+
+  test("intersection only contains common elements") {
+    new TestSets {
+      val t = intersect(u, s2)
+      assert(!contains(t, 1))
+      assert(contains(t, 2))
+      assert(!contains(t, 3))
+    }
+  }
+
+  test("there exists a bounded integer within `s` that satisfies `p`") {
+    new TestSets {
+      assert(exists(u, x => x == 1))
+      assert(!exists(u, x => x < 0))
+    }
+  }
+
+  test("map transforms a set by applying `f` to each element of `s`") {
+    new TestSets {
+      val t = map(u, x => x * x)
+      assert(contains(t, 1))
+      assert(!contains(t, 2))
+      assert(contains(t, 4))
+    }
+  }
 
 }
