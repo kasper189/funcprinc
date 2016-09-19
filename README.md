@@ -8,3 +8,5 @@ Functional Programming Principles in Scala
 *In this course you will discover the elements of the functional programming style and learn how to apply them usefully in your daily programming tasks. You will also develop a solid foundation for reasoning about functional programs, by touching upon proofs of invariants and the tracing of execution symbolically.*
 
 ## Assignments
+1. Recursion
+2. Functional Sets
