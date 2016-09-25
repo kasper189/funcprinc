@@ -5,6 +5,8 @@ jdk: oraclejdk8
 env:
     - PROJECT=recfun
     - PROJECT=funsets
+    - PROJECT=objsets
+	
 
 script:
     - cd $PROJECT && sbt ++$TRAVIS_SCALA_VERSION test
