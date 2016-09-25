@@ -10,3 +10,4 @@ Functional Programming Principles in Scala
 ## Assignments
 1. Recursion
 2. Functional Sets
+3. Object-Oriented Sets
