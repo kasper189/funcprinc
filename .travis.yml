@@ -6,6 +6,7 @@ env:
     - PROJECT=recfun
     - PROJECT=funsets
     - PROJECT=objsets
+    - PROJECT=patmat
 	
 
 script:
