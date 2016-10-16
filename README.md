@@ -11,3 +11,5 @@ Functional Programming Principles in Scala
 1. Recursion
 2. Functional Sets
 3. Object-Oriented Sets
+4. Huffman-Coding
+5. Anagrams
