@@ -7,8 +7,7 @@ env:
     - PROJECT=funsets
     - PROJECT=objsets
     - PROJECT=patmat
-    - PROJECT=forcomp
-	
+    - PROJECT=forcomp	
 
 script:
     - cd $PROJECT && sbt ++$TRAVIS_SCALA_VERSION test
